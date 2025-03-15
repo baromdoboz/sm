@@ -17,10 +17,8 @@ function createLetters() {
     letter.classList.add("letter")
     letter.textContent = text[i]
 
-    if (text[i] === "S" || text[i] === "M") {
+    if (i === 0 || i === 5) {
       letter.classList.add("lightblue")
-    } else {
-      letter.classList.add("black")
     }
 
     letter.style.animationDelay = `${i * 0.2}s`
@@ -46,7 +44,7 @@ document.addEventListener("click", function () {
   //  spacematic.style.opacity = 1;
 
   // Indítjuk az animációt
-//  setTimeout(createLetters, 1000)
+  //  setTimeout(createLetters, 1000)
   createLetters()
 })
 
