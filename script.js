@@ -20,4 +20,4 @@ function createLetters() {
   }
 }
 
-setTimeout(createLetters, 500);
+setTimeout(createLetters, 1000);
