@@ -15,7 +15,7 @@ body {
   height: 100vh;
   margin: 0;
   background-color: #f0f0f0;
-  font-family: "Continuum Medium Regular", sans-serif;
+  font-family: "Continuum Medium", sans-serif;
   cursor: default;
   user-select: none;
 }
