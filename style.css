@@ -5,6 +5,7 @@
   src:
     local("Continuum Medium"),
     url("contm.woff2") format("woff2");
+    url("contm.woff") format("woff");
   font-display: swap;
 }
 
