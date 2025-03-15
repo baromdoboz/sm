@@ -35,14 +35,6 @@ body {
   animation: zoomFadeIn 0.1s forwards;
 }
 
-.letter.lightblue {
-  color: #009eec;
-}
-
-.letter.black {
-  color: black;
-}
-
 @keyframes zoomFadeIn {
   0% {
     opacity: 0;
