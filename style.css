@@ -1,8 +1,10 @@
 @font-face {
-  font-family: 'Continuum Medium Regular';
+  font-family: "Continuum Medium Regular";
   font-style: normal;
   font-weight: normal;
-  src: local('Continuum Medium Regular'), url('Contm___.woff') format('woff');
+  src:
+    local("Continuum Medium Regular"),
+    url("Contm___.woff") format("woff");
   font-display: optional;
 }
 
@@ -13,14 +15,15 @@ body {
   height: 100vh;
   margin: 0;
   background-color: #f0f0f0;
-  font-family: 'Continuum Medium Regular', sans-serif;
+  font-family: "Continuum Medium Regular", sans-serif;
   cursor: default;
+  user-select: none;
 }
 
 .spacematic {
   display: flex;
   animation: fadeOut 0.5s forwards;
-  animation-delay: 6s;
+  animation-delay: 3s;
 }
 
 .letter {
@@ -50,6 +53,10 @@ body {
 }
 
 @keyframes fadeOut {
-  0% { opacity: 1; }
-  100% { opacity: 0; }
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
