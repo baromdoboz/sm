@@ -24,13 +24,14 @@ body {
   display: flex;
   animation: fadeOut 0.5s forwards;
   animation-delay: 3s;
+  font-size: 50px;
+  letter-spacing: 0.1em;
 }
 
 .letter {
   opacity: 0;
   transform: scale(0);
   animation: zoomFadeIn 0.1s forwards;
-  font-size: 50px;
 }
 
 .letter.lightblue {
