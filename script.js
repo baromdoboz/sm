@@ -16,10 +16,10 @@ function createLetters() {
     letter.textContent = text[i]
 
     if (i === 0 || i === 5) {
-      letter.classList.add("lightblue")
+      letter.style.color = "#009eec"
     }
 
-    letter.style.animationDelay = `${i * 0.2}s`
+    letter.style.animationDelay = `${i * 0.15}s`
     spacematic.appendChild(letter)
   }
 }
