@@ -23,7 +23,7 @@ body {
 .spacematic {
   display: flex;
   animation: fadeOut 0.5s forwards;
-  animation-delay: 3s;
+  animation-delay: 5s;
   font-size: 50px;
   letter-spacing: 0.05em;
 }
