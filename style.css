@@ -5,7 +5,7 @@
   src:
     local("Continuum Medium Regular"),
     url("Contm___.woff") format("woff");
-  font-display: optional;
+  font-display: swap;
 }
 
 body {
@@ -25,7 +25,7 @@ body {
   animation: fadeOut 0.5s forwards;
   animation-delay: 3s;
   font-size: 50px;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
 }
 
 .letter {
