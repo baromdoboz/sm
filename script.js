@@ -29,5 +29,6 @@ document.addEventListener("click", function () {
 })
 
 window.addEventListener("load", function () {
+  spacematic.style.opacity = "1"
   setTimeout(createLetters, 1000)
 })
