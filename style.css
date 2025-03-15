@@ -4,7 +4,7 @@
   font-weight: normal;
   src:
     local("Continuum Medium"),
-    url("cm.woff2") format("woff2");
+    url("contm.woff2") format("woff2");
   font-display: swap;
 }
 
