@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'Continuum Medium Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Continuum Medium Regular'), url('Contm___.woff') format('woff');
+  font-display: optional;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  font-family: 'Continuum Medium Regular', sans-serif;
+}
+
+.spacematic {
+  display: flex;
+  animation: fadeOut 0.5s forwards;
+  animation-delay: 6s;
+}
+
+.letter {
+  opacity: 0;
+  transform: scale(0);
+  animation: zoomFadeIn 0.1s forwards;
+  font-size: 50px;
+}
+
+.letter.lightblue {
+  color: #009eec;
+}
+
+.letter.black {
+  color: black;
+}
+
+@keyframes zoomFadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
