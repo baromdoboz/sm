@@ -1,7 +1,7 @@
 const spacematic = document.getElementById("spacematic")
-const text = spacematic.textContent
-
 spacematic.textContent = ""
+
+const text = "SpaceMatic"
 
 function createLetters() {
   spacematic.innerHTML = ""
