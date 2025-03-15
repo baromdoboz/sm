@@ -6,8 +6,82 @@
   <meta name="robots" content="noindex, nofollow">
   <title>SpaceMatic</title>
   <link href="https://fonts.cdnfonts.com/css/continuum-medium" rel="stylesheet">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+      font-family: 'Continuum Medium', sans-serif;
+    }
+
+    .spacematic {
+      display: flex;
+      animation: fadeOut 0.5s forwards;
+      animation-delay: 6s;
+    }
+
+    .letter {
+      opacity: 0;
+      transform: scale(0);
+      animation: zoomFadeIn 0.1s forwards;
+      font-size: 50px;
+    }
+
+    .letter.lightblue {
+      color: #009eec;
+    }
+
+    .letter.black {
+      color: black;
+    }
+
+    @keyframes zoomFadeIn {
+      0% {
+        opacity: 0;
+        transform: scale(0);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes fadeOut {
+      0% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+  </style>
 </head>
 <body>
   <div class="spacematic" id="spacematic">SpaceMatic</div>
+
+  <script>
+    const spacematic = document.getElementById('spacematic');
+    const text = spacematic.textContent;
+
+    spacematic.textContent = '';
+
+    function createLetters() {
+      for (let i = 0; i < text.length; i++) {
+        const letter = document.createElement('span');
+        letter.classList.add('letter');
+        letter.textContent = text[i];
+
+        if (text[i] === 'S' || text[i] === 'M') {
+          letter.classList.add('lightblue');
+        } else {
+          letter.classList.add('black');
+        }
+
+        letter.style.animationDelay = `${i * 0.2}s`;
+        spacematic.appendChild(letter);
+      }
+    }
+
+    setTimeout(createLetters, 500);
+  </script>
 </body>
 </html>
