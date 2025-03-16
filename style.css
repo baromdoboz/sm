@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Continuum Medium";
-  src: url("https://contm.eot");
-  src: url("https://contm.eot?#iefix") format("embedded-opentype"),
-       url("https://contm.woff2") format("woff2"),
-       url("https://contm.woff") format("woff"),
-       url("https://contm.ttf") format("truetype"),
-       url("https://contm.svg#Continuum Medium") format("svg");
+  src: url("contm.eot");
+  src: url("contm.eot?#iefix") format("embedded-opentype"),
+       url("contm.woff2") format("woff2"),
+       url("contm.woff") format("woff"),
+       url("contm.ttf") format("truetype"),
+       url("contm.svg#Continuum Medium") format("svg");
   font-style: normal;
   font-weight: normal;
   font-display: swap;
