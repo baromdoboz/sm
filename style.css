@@ -3,10 +3,8 @@
   font-style: normal;
   font-weight: normal;
   src:
-    local("Continuum Medium"),
     url("contm.woff2") format("woff2");
     url("contm.woff") format("woff");
-    url("contm.ttf") format("truetype");
   font-display: swap;
 }
 
