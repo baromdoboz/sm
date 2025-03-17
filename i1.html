@@ -1,31 +1,24 @@
 <!doctype html>
-<html lang="en">
+<html lang="hu">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex, nofollow" />
-    <!-- Prevent search engine indexing -->
-    <title>Letter Animation</title>
-
+    <title></title>
     <style>
+      @font-face {
+        font-family: "Continuum Medium";
+        src: url("contm.eot");
+        src: url("contm.eot?#iefix") format("embedded-opentype"),
+             url("contm.woff2") format("woff2"),
+             url("contm.woff") format("woff"),
+             url("contm.ttf") format("truetype"),
+             url("contm.svg#Continuum Medium") format("svg");
+        font-style: normal;
+        font-weight: normal;
+        font-display: swap;
+      }
 
-      
-@font-face {
-  font-family: "Continuum Medium";
-  src: url("contm.eot");
-  src: url("contm.eot?#iefix") format("embedded-opentype"),
-       url("contm.woff2") format("woff2"),
-       url("contm.woff") format("woff"),
-       url("contm.ttf") format("truetype"),
-       url("contm.svg#Continuum Medium") format("svg");
-  font-style: normal;
-  font-weight: normal;
-  font-display: swap;
-}
-
-      
-      
-      /* General styles */
       body {
         display: flex;
         justify-content: center;
@@ -33,23 +26,22 @@
         height: 100vh;
         margin: 0;
         background-color: #f0f0f0;
-        font-family: "Continuum Medium", sans-serif; /* Use Continuum Medium */
+        font-family: "Continuum Medium", sans-serif;
       }
 
       .container {
         display: flex;
         opacity: 1;
-        animation: fadeOut 1s 5s forwards; /* Fade out after 5 seconds */
+        animation: fadeOut 1s 5s forwards;
       }
 
       .letter {
         font-size: 3rem;
         opacity: 0;
         transform: scale(0);
-        animation: zoomFadeIn 0.1s forwards; /* Animation duration set to 0.1s */
+        animation: zoomFadeIn 0.1s forwards;
       }
 
-      /* Color the Q and Z letters #009eec */
       .container .letter:nth-child(1),
       .container .letter:nth-child(6) {
         color: #009eec;
@@ -62,7 +54,6 @@
         }
       }
 
-      /* Adding sequential delays for each letter, increasing by 0.15s */
       .container .letter:nth-child(1) {
         animation-delay: 1s;
       }
@@ -94,7 +85,6 @@
         animation-delay: 2.35s;
       }
 
-      /* Keyframes for the fade-out effect of the container */
       @keyframes fadeOut {
         to {
           opacity: 0;
@@ -104,18 +94,16 @@
   </head>
   <body>
     <div class="container">
-      <span class="letter">Q</span>
-      <span class="letter">w</span>
-      <span class="letter">e</span>
-      <span class="letter">r</span>
-      <span class="letter">t</span>
-      <span class="letter">Z</span>
-      <span class="letter">u</span>
-      <span class="letter">i</span>
-      <span class="letter">o</span>
+      <span class="letter">S</span>
       <span class="letter">p</span>
+      <span class="letter">a</span>
+      <span class="letter">c</span>
+      <span class="letter">e</span>
+      <span class="letter">M</span>
+      <span class="letter">a</span>
+      <span class="letter">t</span>
+      <span class="letter">i</span>
+      <span class="letter">c</span>
     </div>
-
-    <script></script>
   </body>
 </html>
